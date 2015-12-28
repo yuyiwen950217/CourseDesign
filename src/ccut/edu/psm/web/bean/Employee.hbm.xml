@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="ccut.edu.psm.web.bean">
+    <class
+            name="Employee"
+            table="Employee"
+    >
+        <meta attribute="sync-DAO">false</meta>
+
+        <id
+                name="id"
+                type="int"
+                column="eid"
+        >
+            <generator class="increment"/>
+        </id>
+
+        <property
+                name="name"
+                column="name"
+                type="java.lang.String"
+                not-null="false"
+                length="50"
+        />
+
+        <property
+                name="sex"
+                column="sex"
+                type="java.lang.String"
+                not-null="false"
+                length="10"
+        />
+
+        <property name="salary"
+                  column="salary"
+                  type="java.lang.Float"
+                  not-null="false"
+                  length="10"
+                  />
+
+        <property name="fund"
+                  column="fund"
+                  type="java.lang.Float"
+                  not-null="false"
+                  length="10"
+                  />
+
+        <property name="training"
+                  column="training"
+                  type="java.lang.String"
+                  not-null="false"
+                  length="200"
+                  />
+
+        <property name="rating"
+                  column="rating"
+                  type="java.lang.String"
+                  not-null="false"
+                  length="100"
+                  />
+
+
+    </class>
+</hibernate-mapping>
+
