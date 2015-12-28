@@ -5,6 +5,7 @@ import ccut.edu.psm.util.PageBean;
 import ccut.edu.psm.web.bean.Department;
 import ccut.edu.psm.web.service.DepartmentService;
 import ccut.edu.psm.web.structs.form.DepartmentForm;
+import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts.action.Action;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;

@@ -11,6 +11,6 @@
   <title>$Title$</title>
 </head>
 <body>
-666666
+<form action="" method="post"
 </body>
 </html>
